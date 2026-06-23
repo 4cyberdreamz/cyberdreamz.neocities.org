@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+
+<title>la la la</title>
+<link href='mymusic/music.css' rel='stylesheet'>
+<meta charset='UTF-8'>
+
+</head>
+
+<body>
+
+<div class='disk'>
+<img src='mymusic/diskIdle.gif' width=30% height=30% id='diskanim'>
+</div>
+
+<div class='up1'>
+<img src='mymusic/buttons.png' width=20% height=20%>
+</div>
+
+<div class='stim'>
+
+</div>
+
+<div class='up'>
+<img id='icon' src='mymusic/icon.gif'>
+ &nbsp; CYBER MEDIA PLAYER
+</div>
+
+<div class='container'>
+
+<main>
+
+<div class='title'>
+&nbsp; <a href=index.html> ⮜ Go back? </a> 
+<button id='spin2' onclick='toggle()'>Click this to start/stop spinning the cd in the bottom right</button>
+</div>
+
+<div class='contents'>
+
+<div class='song'>
+<p id='name'> <b> new_world </b> </p>
+<audio controls onplay='changeInfo(9); diskSpin()' onpause='diskStop()'>
+<source src='https://dl.dropboxusercontent.com/scl/fi/0vgnpte0gal1urxm02sw5/new_world.mp3?rlkey=m4zab1txb5ardrnmh9josdhch&st=pxkaz0dt&dl=1'>
+</audio>
+<p id='date'><i> jul 22 2024 </i></p>
+</div>
+
+<div class='song'>
+<p id='name'>3d</p>
+<audio controls onplay='changeInfo(8); diskSpin()' onpause='diskStop()'>
+<source src='https://dl.dropboxusercontent.com/scl/fi/q31bz0dhm6glnidi50awa/3d.mp3?rlkey=ge7ja6ooe9ifdfiysnqmt4vjo&st=9kl8kw53&dl=1'>
+</audio>
+<p id='date'><a href='https://choptop84.github.io/abyssbox-app/#a3N08threedee00000Y04nonen320s0k52l00e03t2ma7g0fj07r3Z1O_U0000000000i0o453T3v0lu03f010tc00q00001F011p600503bld130SU0010508whhaa9hh0E2c0c0812T7v0lu32f010p500q000001ad080HU7000U0006000Eh0I9E0c0T1v0lue0f0000q0000027d080A1F4B3Q65dkPe433R0000E3c061d62a7eT2v0lu02f010w400q0000w02c0d030w1h0E0c0T4v0luf0f0000q000001az8888onapap4oSBKSJJAArriiiiii07JCABrzrrrrrrr00YrkqHrsrrrrjr005zrAqzrjzrrqr1jRjrqGGrrzsrsA099ijrABJJJIAzrrtirqrqjqixzsrAjrqjiqaqqysttAJqjikikrizrHtBJJAzArzrIsRCITKSS099ijrAJS____Qg99habbCAYrDzh00E0c0b4x80000000004w000000018j000000004h400000000h4g00000000p22qFAuigp72OpBQieDl8WI5mOGGhRqpBOF7gwOeXjF0jFQOfjAiei8VczAVBRGpMtiyhR2Y2OPQv94aqOPO_i3IppvFkFTdHwkOcm4s2MOcnAE2MK0j8N2ChQyezIpE4uDP2Chwap6byexgE6ng8W17gE4t00'>Beepbox link</a> &nbsp; | &nbsp; <i> apr 13 2024 </i></p>
+</div>
+
+<div class='song'>
+<p id='name'> <b> tangled_wires </b> </p>
+<audio controls onplay='changeInfo(7); diskSpin()' onpause='diskStop();'>
+<source src='https://dl.dropboxusercontent.com/scl/fi/yrhsht8lhnbhn646qnzg5/tangled_wires.mp3?rlkey=e41nv2cf5a70yf6rkf9n62bqi&st=ofixxw4x&dl=1'>
+</audio>
+<p id='date'><i> apr 5 2024 </i></p>
+</div>
+<div class='song'>
+<p id='name'> digitalskies</p>
+<audio controls onplay='changeInfo(6); diskSpin()' onpause='diskStop();'>
+<source src='https://dl.dropboxusercontent.com/scl/fi/idkgb7ykmxff9xvr5jqv8/digitalskies.mp3?rlkey=75zxf2sapbradjhdx3loj27ej&st=1nh9m3gy&dl=1'>
+</audio>
+<p id='date'><a href='https://choptop84.github.io/abyssbox-app/#a3N0cdigitalskies00000Y04nonen720s1k02l00e03t2ma7g0fj07r3Z1O_U000000000000000000i0o3232446T0v0ou00f010r700q0000hQ010ge0033a00fa3bd240w50h0y0000000000000w000000E1c0c05T0v0pu00f010r600q0000gQ010ce0033a00Oad230w50h0y0000000000000w000000E1c0c05T0v0ou00f010p700q0000hQ010ce0033901ha3bd040w50h0y0000000000000w000000E1c0c05T8v0pu08f010j600q0000wB181110Oa0d080x660W0O00E1c0b8T6v0tu06f021562ka00q00001L0000400Oa53b0d030W0O00h0E1c001T1v0pu01f0000q00008R010ob002630Oadd080A9F6B9Q4ce5Pd756R0000E3c0ba62g632T0v0pu00f0000q0000gt151630Oahd040w20h0y00000000000002000000E0c0T4v0vu04f1a0q00000d200Oahz8888onapap4oSBKSJJAArriiiiii07JCABrzrrrrrrr00YrkqHrsrrrrjr005zrAqzrjzrrqr1jRjrqGGrrzsrsA099ijrABJJJIAzrrtirqrqjqixzsrAjrqjiqaqqysttAJqjikikrizrHtBJJAzArzrIsRCITKSS099ijrAJS____Qg99habbCAYrDzh00E0c0T2v0pu15f180q0000040Oad030w0h0E0c0b82000000000000000000020w000000004h400000000h4g000000014h000000004h400000000h4g000000014h00000000p242Aqp7wjwWpQYWuge3B2c2ChWgzwOe38WNSsU-F1At6yhS8cL0CmChUgzwzLVUnjcKj0FAuwEka52x0Q9ewCbEkcxgEka02OO_gB8ChW16OOfgzazahvH9dnpAuPBdByW4p2OUChqcF2wb8eDQ8OgtB04zj8Z23FMBuF1RateD3kWs20Icz5GAOc1cIz24VAuNzApOqp69PBrpi5ooEz7CvcEOOD4VshzhzN6sANh4k1j8NohQ2ewhQ2ewhQ2ewhQ2c0'>Beepbox link</a> &nbsp; | &nbsp; <i> feb 29 2024 </i></p>
+</div>
+
+<div class='song'>
+<p id='name'> freezing?</p>
+<audio controls onplay='changeInfo(5); diskSpin()' onpause='diskStop();'>
+<source src='https://dl.dropboxusercontent.com/scl/fi/26c49h1hbplgod1cu4bcc/freezing.mp3?rlkey=mwxeyaqgkcdszad4mirorvg06&st=bf2jpw0d&dl=1'>
+</audio>
+<p id='date'><a href='https://choptop84.github.io/abyssbox-app/#a3N08freezing00000Y04nonen640s0k02l00e07t2Ga7g0fj07r3Z1O_U00000000000000000000i0o432333T0v0Ou00f020s616e00q00000z0214e0s0005ld770w10h0y00000000000002000000E2c04212T0v0Ou00f011ee00q0000g01d040w20h1y00000000000002000000E0c0T1v0Ou01f0000q0000027d080A1F4B3Q65dkPe433R0000E3c061d62a7eT1v0Ou01f0000q00001374cad080A1F4B3Q65dkPe433R0000E3c061d62a7eT5v0Oua0f060m92hc1ea2k02f30re00q00008347ad370H_QiBy9asq99900h0E0c0T1v0Ou56f0000q0000ww010p70011d030A5F5B9Q4445PfaedR0000E4c0b962863979T2v0Ou02f0000q0000wx010t50011ad080w0h0E1c0b9T2v0Ou02f010w400q0000x12c04bad030w1h0E1c012T4v0Ou04f0000q000001az8888onapap4oSBKSJJAArriiiiii07JCABrzrrrrrrr00YrkqHrsrrrrjr005zrAqzrjzrrqr1jRjrqGGrrzsrsA099ijrABJJJIAzrrtirqrqjqixzsrAjrqjiqaqqysttAJqjikikrizrHtBJJAzArzrIsRCITKSS099ijrAJS____Qg99habbCAYrDzh00E1c012T2v0Ou02f010w400q0000w10ld030w1h0E0c0b4zgid000000i4N8j0000014h4h4000000g810w00000000000000000000000000410g40000000014h000000004h400000000g4000000p22KIPlPQ78Fz2dGttcBmtSorSI2wt_E42fgEka51czQeRr2xgEkdxQ9Ia52xgS0b3bY3cCnWuhBAI867apami0jFQOfk8VwxyezhHjFWp7jFAt6z1w001gfhZ80FAoI8WluBmFQWp7iHkWteA0FAo1ka52xgEka52xgE4t2w0FCKbzNs0'>Beepbox link</a> &nbsp; | &nbsp; <i> dec 14 2023 </i></p>
+</div>
+
+<div class='song'>
+<p id='name'> you can move around using the arrow keys</p>
+<audio controls onplay='changeInfo(4); diskSpin()' onpause='diskStop();'>
+<source src='https://dl.dropboxusercontent.com/scl/fi/a3de2kjkk7wcwuk80wlnx/arrowkeys.mp3?rlkey=w295kwdyi37dkwe3sobv3thpa&st=9xgowi6r&dl=1'>
+</audio>
+<p id='date'><a href='https://choptop84.github.io/abyssbox-app/#a3N09arrowkeys00000Y04nonen410s0k02l00e07t2ma7g0fj07r3Z1O_U0000000000i0o4323T0v0pu00f0000q0000g01d040w20h1y00000000000002000000E0c0T0v0lu00f0000q0000g01d040w20h1y00000000000002000000E0c0T1v0lufbf0000q000000d020A0F0B0Qf444Pf000R0000E2c050819T0v0lu12f010s400q000000d030w20h2y00000000000002000000E0c0T2v0lu02f010w400q0000w02c0d030w1h0E0c0b4h4h4g00000h4h4h0000014h4h400000000id000000h4x4i000000p22-FyW0FxOCIkQNqMJgFG5dkFBhoA50kOf3ydcng5E2Q3hNkzO0J0mwbg5E582nFAuwhQOeyhQieyhQ2exh0kOf3GqpvwUfbkyf4sFhGV7gp6DBszjOqoKMbIdziDjVaDkGQWtezeDSgKgFlaRyFi2ChygzFAt6xhGkyeAhQiezgQh7h8Wd2ziF4t8zEka500'>Beepbox link</a> &nbsp; | &nbsp; <i> nov 23 2023 </i></p>
+</div>
+
+<div class='song'>
+<p id='name'> <b> palelightfrommywindow </b> </p>
+<audio controls onplay='changeInfo(3); diskSpin()' onpause='diskStop();'>
+<source src='https://dl.dropboxusercontent.com/scl/fi/9kwayhepcfjl9utn8hrrr/palelightfrommywindow.mp3?rlkey=1z4k3kyms0g81dzqrvcvpim5k&st=jusn7wlj&dl=1'>
+</audio>
+<p id='date'><a href='https://choptop84.github.io/abyssbox-app/#a3N09palelight00000Y04nonen630s0k52l04e0rt2ma7g0vj08r3Z1O_U000000000000000000i0o432333T1v0lu01f0229c2r000q0000xV010l500030673bad030AaFdB0Q4ekrP9996R0000E1c012T5v0lu05f010x000q0000o34337ad040H___AAzi9901jAJh2E0c0T1v0iue1f0000q00000y010n7007d4a0A0F0B7Q4444Pe600R0000E2c0be61cT0v0iu00f0127e00q0000gw0126b001d840w60h0y0000000000000g000000E0c0T1v0eu01f0229c2r000q0000xN010l5000633bad030AaFdB0Q4ekrP9996R0000E1c012T5v0lu05f010x000q0000p31374bad140H_SSBJzi9901jAJh2E0c0T2v0iu02f010x000q0000x02c03bd030w4h0E0c0T2v0iu02f0113e00q00000w0124e00d080w0h0E0c0T2v0iu02f010x000q0000x02c03bd030w4h0E0c0b00800g000000d0c4000i0w00000h8x4A00000000001mlx8QlBhml18Q4zgilx8Q000000004Ak0001D4x804w00000000004x800M00000004th0000000000000001001Dh2hh95c0pO8y0000pMc30Mc000034x8i4x8i4x8020070000000000w008A7p29XDjFyUz5E2Q9xEQqBezhFQWtetfj5E2Qat6yChWteDjD1Rql9cLRPzVMujFQYysu2CnV92QkOf1RcFjOdj8Y8leHjHlGtaBiBGJqLoEPMKRkFgq96EsGFRXlGRjFkGlGHmIkql8RVsCnPa9BNfytqDiGtmFCLEydczQ2ewhFCnEpaCCnWwIIZ7RpkmCuzWkMWej9FHbeDRajl1heRJr3iB88ap7AB5cLMtb0WChOBeBkOuCFp6BjGp79kWlizjV1bMdGFBaRaJAYgGtCzjHRq-IGRGdqFlppvKiReDjbZiNlGjFWt6BBplap7EE63wocU-FmGlOfjlGtqIsvclmFm8VUnjFQWp7eDGAt2CnQWAYzHm2etfoerDyZezh8Ou5FAuH0MI6hPFWxPqtfl8W5gLGlpV7iBidf5U6Jh8OChyOx0Qac5iEQG5axhEkG6y8Wh7h8WdaAhQG54zF4uyEkG56BiEQG5aBiEQqey8Wh7h8WdaAhQG54zEAuy8Wd6whQql8zFkadazhQh7g8W17g8W17g8W17g8Z0hQ2ewhQ2ewhQ2exiEAsYngdukDyZ2ChyOwnRO-xhEk2-yhQd5gbW97hEQq50zEkiexf8W17g00DjE7jWkYngdugDyZ8'>Beepbox link</a> &nbsp; | &nbsp; <i> jul 9 2023 </i></p>
+</div>
+
+<div class='song'>
+<p id='name'> gray town (more like gay town. lol. lol)</p>
+<audio controls onplay='changeInfo(2); diskSpin()' onpause='diskStop();'>
+<source src='https://dl.dropboxusercontent.com/scl/fi/u61v00wam4mp3als0gvuw/gaytown.mp3?rlkey=sf5kybshfva7l6au9mca63zux&st=migqvb56&dl=1'>
+</audio>
+<p id='date'><a href='https://choptop84.github.io/abyssbox-app/#a3N04gray00000Y04nonen510s0k12l06e07t1Ua7g0ij07r3Z1O_U000000000000i0o43233T0v0lu10f0000q0000g01d040w20h0y00000000000002000000E0c0T1v0lu97f0000q00000z010t2007ad4a0A9F3B6Qa86ePaa74R0000E3c0bd63c76T3v0luf4f0000q00000x010p600ad080S09ajurqOiO99000h0E1c0b9T1v0lub6f010p700q000001ad230A5F4BbQ4445Peec8R0000E3c06246357cT3v0iu03f010tc00q00001z011p60073bvd130SU0010508whhaa9hh0E2c0c0812T3v0lu03f0000q0000wx010t50011ad080SjPrrW9V800ah0a0h0E1c009b018T4z54lw0000000i4N8j0000000g000040000000004z8M00010g410g410001ci4N8j4xc000p239IIZ7Ql1mC4EIIRZqBBqcGJHlppFB-IHRGZqBkHqaHjGRqkdlQ5mDlGQC6q-zyOPFZeIPbdvhFuzmDyGHkGRqdmDopWfEloejhC1eDopvyCypvEoAzA04WtxCLE1OguBdiDjDjDENkVQVQVwFyWoQo4QpcQqhEwap6b3bwjbECnhcLh6nhcKynQa9BW8OW9BQi-xh8W160'>Beepbox link</a> &nbsp; | &nbsp; <i> dec 7 2021 </i></p>
+</div>
+
+<div class='song'>
+<p id='name'> this one's called "yueyaaah babey" in my files</p>
+<audio controls onplay='changeInfo(1); diskSpin()' onpause='diskStop();'>
+<source src='https://dl.dropboxusercontent.com/scl/fi/5p4mi9aemx2ah1s8e6cd1/yay.mp3?rlkey=ymjvx6068l8uwbb22rgxd0ai1&st=drmzubnc&dl=1'>
+</audio>
+<p id='date'><a href='https://choptop84.github.io/abyssbox-app/#a3N08Untitled00000Y04nonen410s0kb2l00e07t2ma7g0fj07r3Z1O_U0000000000i0o4323T1v0lu01f0000q0000wx161112d030AbF6B0Q4dirP9996R0000E2c0b8638T1v0iu01f0000q00008z172372d4a0A0F0B7Q4444Pe600R0000E2c0be61cT0v0lu12f171q0000012d030w20h2y00000000000002000000E0c0T6v0lugdf174q00008142d350W0400h0E1c02lT3v0luf8f0000q00000x1832d080S-Iqiiiiiiiiiiiih0E1c0bnb4x820w00000i4x8i0000004200000000000y8w00000h4i8y000000p237FAu34syhQWhvg8Wh72li-ubQq9vf5Wd4L1ppWfydePkJg1j8Y6EkapHQW525dvjka5cRWt2xjbS6hWIOc2OOYjo0NvgB8LEQHhFexetacWp7F2eiF5Z8zFkyeAhQ84zQh7jFBZ8Xc5cz20zop60bRVV0zOkOf94uhBiDAif9j8-ip2teujEp2tap7AOf9i8YBgOkyc0'>Beepbox link</a> &nbsp; | &nbsp; <i> mar 17 2021 </i></p>
+</div>
+
+</div>
+
+</main>
+
+<div class='side'>
+<img src='mymusic/1.png' id='image'>
+<p id='songname'>Name</p>
+<p id='dur'>0:00</p>
+<hr>
+<div id='notes'>Description will appear here. Careful, some of these may be loud <hr> Sometimes when I'm Really bored I make music... I'm not really good at it but here are some tracks that I thought are good enough to share. Most of these are just short loops.</div>
+
+</div>
+</div>
+
+</div>
+
+
+<script src="mymusic/mus_info.js"></script>
+</body>
+
+</html>

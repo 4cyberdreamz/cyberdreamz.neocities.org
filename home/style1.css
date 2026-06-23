@@ -1,0 +1,125 @@
+:root {
+--bg: #212135;
+--ultramarine: #4166F5;
+--mint: #90F8CA;
+--softblue: #69A9F3;
+--lime: #CBFD90;
+}
+
+/* --- */
+
+#intro {
+width: 650px;
+height: 250px;
+}
+
+#updlog {
+width: 308px;
+height: 200px;
+}
+
+#todo {
+width: 308px;
+height: 200px;
+}
+
+#buttons {
+width: 322px;
+height: 180px;
+margin-bottom: 10px;
+}
+
+#chat {
+height: 80px;
+width: 216px;
+display: inline-block;
+}
+
+/* --- */
+
+.windows {
+border: 2px dashed var(--mint);
+height: 50px;
+display: inline-block;
+}
+
+.deco {
+text-align: center;
+height: 55px;
+width: 670px;
+margin: 5px;
+}
+
+.clippy {
+margin: 5px;
+height: 96px;
+width: 96px;
+border: 2px dashed var(--mint);
+display: inline-block;
+}
+
+.fakead {
+height: 60px;
+border: 2px dashed var(--mint);
+}
+
+#top {
+margin-bottom: 10px;
+background-image: url('banner1.gif');
+}
+
+#bottom {
+margin-top: 10px;
+background-image: url('banner11.gif');
+}
+
+#hello {
+margin:20px;
+width: 370px;
+}
+
+#hipng {
+position: absolute;
+width: 240px;
+right: 20px;
+bottom: 5px;
+z-index: 2;
+}
+
+.sky {
+background-image: url('/bgs/cloudset1.png');
+width: 150px;
+height: 150px;
+border: 2px dashed var(--mint);
+position: absolute;
+right: 50px;
+bottom: 15px;
+z-index: 1;
+}
+
+.pet {
+margin: 5px;
+vertical-align: top;
+display: inline-block;
+width:314px;
+height:321px;
+position: relative;
+}
+
+#cat {
+width: 320px;
+position: absolute;
+bottom: -25px;
+left: 0px;
+}
+
+.divider {
+width: 350px;
+margin: -10px;
+margin-left: 20px;
+}
+
+#small {
+font-size: 60%;
+margin: 0px;
+}

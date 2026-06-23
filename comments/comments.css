@@ -1,0 +1,27 @@
+:root {
+--bg: #212135;
+--ultramarine: #4166F5;
+--mint: #90F8CA;
+--softblue: #69A9F3;
+--lime: #CBFD90;
+}
+
+/* ^ do i even have to paste this in every stylesheet i make? */
+
+#rule {
+rotate: -3deg;
+position: absolute;
+top: 30px;
+}
+
+#back {
+position: absolute;
+right: 15px;
+}
+
+#credit {
+width: 120px;
+margin: auto;
+margin-bottom: 10px;
+text-align: center;
+}

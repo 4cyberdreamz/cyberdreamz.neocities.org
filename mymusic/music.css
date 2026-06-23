@@ -1,0 +1,191 @@
+body {
+background-color: black;
+font-family: 'Nintendo-DS-BIOS';
+font-size: 120%;
+image-rendering: pixelated;
+overflow: hidden;
+color: #3b0867;
+}
+
+button {
+	font-family: 'Nintendo-DS-BIOS';
+	height: 25px;
+font-size: 95%;
+color: #3b0867;
+position: relative;
+	bottom: -30px;
+}
+
+@font-face {
+font-family: Nintendo-DS-BIOS;
+src: url(https://dl.dropbox.com/s/vlxjtnvrl9s0snp/Nintendo-DS-BIOS.ttf);
+}
+
+.disk {
+	position: absolute;
+	bottom: -35px;
+	right: -683px;
+	pointer-events:none;
+}
+
+.up {
+	position: absolute;
+	left: 330px;
+	top: 45px;
+	color:#cefff9;
+}
+
+.up1 {
+	position: absolute;
+	right: -5px;
+	top: 45px;
+}
+
+.stim {
+	width: 1920px;
+	height:56px;
+	background-image: url('stim.gif');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 300px;
+	background-position-x: 1920px, 0px;
+	z-index: -1;
+	animation: marquee 60s linear infinite;
+	animation-delay: 10s;
+}
+
+.container {
+background-color: white;
+width: 900px;
+margin: auto;
+height: 600px;
+margin-top: 40px;
+padding: 0px;
+display: flex;
+border-image: linear-gradient(-150deg,rgba(89, 81, 235, 1) 0%, rgba(85, 56, 162, 1) 100%) 1;
+border-top: 35px solid;
+border-right: 8px solid;
+border-left: 8px solid;
+border-bottom: 8px solid;
+/* border-radius: 15px 15px 0px 0px; */
+outline: 1px solid #cefff9;
+/* border: 10px solid transparent;
+border-image: url('border.png') 5 stretch; */
+}
+
+.side, .contents {
+	padding: 15px;
+	border: 1px solid black;
+}
+
+
+.contents {
+	height:537px;
+	width: 650px;
+	overflow: auto;
+	background-image: url('pattern 157.gif');
+	
+}
+
+.title {
+	height: 25px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 3px;
+	background-color: #eff3f2;
+}
+
+.side {
+	width: 650px;
+	height:570px;
+	border-right: 1px solid black;
+	background-image: url('pattern 328.gif');
+}
+
+.song {
+	display: inline-block;
+	width: 295px;
+	border: 2px dotted grey;
+	padding: 5px;
+	margin-bottom: 10px;
+	margin-right: 3px;
+	margin-left: 3px;
+	background-color: #eff3f2;
+	filter: drop-shadow(3px 3px 3px #c7c7c7);
+}
+
+#icon {
+	position: absolute;
+	left: -50px;
+	top: -30px;
+}
+
+#date {
+	text-align: right;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+audio {
+	width: 295px;
+}
+
+a {
+	color: #f3436b;
+}
+
+#notes {
+	border: 1px solid black;
+	overflow-y: scroll;
+	width: 170px;
+	height: 200px;
+	padding: 5px;
+	background-color: #eff3f2;
+}
+
+#songname {
+	font-size: 130%;
+	margin-top: -30px;
+	text-align: center;
+}
+
+#dur {
+	margin-top: -20px;
+	margin-bottom: -5px;
+	text-align: center;
+}
+
+#image {
+	border: 1px solid black;
+	filter: drop-shadow(3px 3px 3px #a4cef4);
+	height: 150px;
+	width: 150px;
+	margin: auto;
+	margin-left: 18px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	image-rendering: auto;
+}
+
+#name {
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+#spin2 {
+	position: relative;
+	top: -2px;
+	left: 255px;
+}
+
+@keyframes marquee {
+
+0% {
+background-position-x: 1920px, 0px;
+}
+
+100% {
+background-position-x: 0px, 1920px;
+}
+
+}

@@ -1,0 +1,55 @@
+:root {
+--bg: #212135;
+--ultramarine: #4166F5;
+--mint: #90F8CA;
+--softblue: #69A9F3;
+--lime: #CBFD90;
+}
+
+#telegram {
+  margin-top: -10px;
+  font-size: 95%;
+ color: var(--mint);
+}
+
+#back {
+position: absolute;
+right: 10px;
+}
+
+#about {
+width: 222px;
+margin: auto;
+position: relative;
+z-index: 1;
+}
+
+.pics {
+display: inline-block;
+vertical-align: top;
+margin: 5px;
+padding: 10px;
+}
+
+.pixel {
+position: absolute;
+top: 0px;
+right: 220px;
+z-index: 2;
+}
+
+#image {
+border: 2px dashed var(--mint);
+}
+
+#image:hover {
+animation-name: rotate;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+0% {rotate:4deg;}
+50%{rotate:-4deg;}
+100% {rotate:4deg;}
+}

@@ -1,0 +1,127 @@
+.intro {
+width: 400px;
+margin: auto;
+}
+
+#before {
+	text-align: right;
+	font-size:150%;
+	margin-top: 40px;
+	margin-right: 55px;
+	color: var(--mint);
+	rotate: 3deg;
+	filter: drop-shadow(0px 0px 7px var(--ultramarine));
+}
+
+#after {
+	color: var(--softblue);
+	rotate: -3deg;
+	font-size:120%;
+	margin-top:-3px;
+	margin-bottom: 35px;
+	filter: drop-shadow(0px 0px 7px var(--ultramarine));
+	
+}
+
+#doorbg {
+	text-align: center;
+	margin-left:35px;
+	margin-top: 30px;
+	width:600px;
+	height: 200px;
+	border: 2px dashed var(--ultramarine);
+	animation-name: bgscroll;
+	animation-duration: 10s;
+    animation-iteration-count: infinite;
+	animation-direction:alternate;
+	animation-timing-function: linear;
+	background-image: url('bgs/question marks.gif');
+}
+
+#d1, #d2 {
+	position: relative;
+	display: inline-block;
+	color: var(--lime);
+	font-size: 120%;
+}
+
+#d1 {
+  top: -25px;
+  padding-right: 50px;
+  animation-name: float;
+	animation-duration: 3s;
+    animation-iteration-count: infinite;
+	animation-direction:reverse;
+}
+
+#d2 {
+    top: 50px;
+    padding-left:50px;
+    animation-name: float;
+	animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.d1_img, .d2_img {
+	width:90px;
+	height:190px;
+	margin-bottom: -20px;
+}
+
+.d1_img {
+	background-image: url('dor.png');
+	background-size: 90px;
+}
+
+.d2_img {
+	background-image: url('dor.png');
+	background-size: 90px;
+	
+}
+
+.d1_img:hover {
+	background-image: url('dor1.png');
+	background-size: 127px;
+	width:127px;
+	margin-right: -10px;
+}
+
+.d2_img:hover {
+	background-image: url('dor1.png');
+	background-size: 127px;
+	width:127px;
+	margin-left: -37px;
+}
+
+
+@keyframes float {
+	0% {
+		filter: drop-shadow(0px 0px 5px var(--ultramarine));
+		transform: translatey(0px);
+	}
+	50% {
+		filter: drop-shadow(0px 0px 10px var(--ultramarine));
+		transform: translatey(10px);
+	}
+	100% {
+		filter: drop-shadow(0px 0px 7px var(--ultramarine));
+		transform: translatey(0px);
+	}
+}
+
+@keyframes bgscroll {
+	0% {
+		background-position-x: 0px, 100px;
+		background-position-y: 0px, 100px;
+	}
+	100% {
+		background-position-x: 100px, 0px;
+		background-position-y: 100px, 0px;
+	}
+}
+
+#bottom {
+	position: absolute;
+	color: black;
+	bottom:0px;
+}

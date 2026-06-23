@@ -1,0 +1,302 @@
+:root {
+--ground: #E6CB00;
+--wall: #D69E00;
+--path: #E8FF3F;
+}
+
+/* @font-face {
+  font-family: 'pixeloid';
+  src:url('/fonts/PixeloidMono.ttf') format('truetype');
+} */
+
+@font-face {
+font-family: Nintendo-DS-BIOS;
+src: url(/fonts/Nintendo-DS-BIOS.ttf);
+}
+
+body {
+background-image: url('g.gif');
+background-size: 40px 40px;
+image-rendering: pixelated;
+font-family: 'Nintendo-DS-BIOS';
+font-size: 120%;
+}
+
+.container {
+width: 1040px;
+margin: auto;
+}
+
+.main, .left, .right {
+display: inline-block;
+vertical-align: top;
+}
+
+.left {
+margin-top: 130px;
+}
+
+.right {
+margin-top: 392px;
+}
+
+.roof, .roofsmall {
+border-width: 0px 3px 3px 3px;
+border-color: black;
+border-style: solid;
+margin: auto;
+height: 25px;
+}
+
+.roofsmall {
+width: 190px;
+}
+
+.roof {
+width: 595px;
+}
+
+.window {
+margin: 5px;
+text-align: center;
+display: inline-block;
+}
+
+.wall, .wallsmall {
+border-width: 0px 3px 3px 3px;
+border-color: black;
+border-style: solid;
+margin: auto;
+background-color: var(--wall);
+position: relative;
+}
+
+.wallsmall {
+height: 100px;
+width: 190px;
+}
+
+.wall {
+height: 131px;
+width: 595px;
+}
+
+.decor, .door, .window {
+display: inline-block;
+}
+
+.decor {
+margin-top: 5px;
+margin-left: 5px;
+}
+
+.window {
+position: absolute;
+right: 100px;
+top: 50px;
+}
+
+.door {
+position: absolute;
+bottom: -7px;
+right: 38px;
+}
+
+.kitty {
+position: absolute;
+right: 90px;
+top: 130px;
+}
+
+.groundbig, .groundsmall, .grounddown, .back, .ground, .groundside, .smallground {
+background-color: var(--ground);
+border-color: black;
+border-style: solid;
+margin: auto;
+}
+
+#upleft {
+top: 128px;
+right: 100.5px;
+}
+
+#upright {
+top: 128px;
+left: 100px;
+}
+
+#botright {
+bottom: 70px;
+left: 100px;
+}
+
+#botleft {
+bottom: 70px;
+right: 99.5px;
+}
+
+#sideborder {
+border-width: 0px 3px 0px 3px;
+border-color: black;
+border-style: solid;
+width: 260px;
+}
+
+.groundside {
+position: absolute;
+border-width: 3px 0px 0px 0px;
+height: 80px;
+width: 260px;
+}
+
+.groundbig {
+width: 605px;
+border-width: 3px 3px 0px 3px;
+height: 322px;
+position: relative;
+}
+
+.groundsmall {
+margin-top: -10px;
+width: 440px;
+border-width: 0px 3px 0px 3px;
+height: 107px;
+position: relative;
+}
+
+.smallground {
+border-width: 3px 3px 0px 3px;
+position: relative;
+width: 480px;
+height: 351px;
+}
+
+.grounddown {
+z-index: 3;
+margin-top: -10px;
+margin-bottom: -3px;
+border-width: 0px 3px 0px 3px;
+height: 600px;
+width: 100px;
+position: relative;
+}
+
+.ground {
+height: 250px;
+width: 200px;
+position: relative;
+border-width: 3px 3px 0px 3px;
+margin-bottom: 68px;
+position: relative;
+}
+
+.pathbig {
+margin: 20px;
+margin-left: 35px;
+margin-top: 40px;
+width: 500px;
+height: 45px;
+border: 22px solid transparent;
+border-image: url('pant.png') 18 stretch;
+background-color: var(--path);
+}
+
+.pathsmall {
+position: absolute;
+top: -45px;
+right: 65px;
+width: 250px;
+margin: 10px;
+border: 22px solid transparent;
+border-image: url('pant1.png') 18 stretch;
+background-color: var(--path);
+}
+
+.plastic {
+position: absolute;
+bottom: 0;
+margin: auto;
+background-image: url('g2.gif');
+background-size: 35px 35px;
+height: 10px;
+width: 100%;
+}
+
+#back {
+margin-top: 10px;
+border: 22px solid transparent;
+border-image: url('pant.png') 18 stretch;
+background-color: var(--path);
+}
+
+.back {
+height: 112px;
+width: 100px;
+margin: 0px 0px 148px 50px;
+border-width: 3px 3px 0px 3px;
+text-align: center;
+position: relative;
+}
+
+.list {
+border: 22px solid transparent;
+border-image: url('pant.png') 18 stretch;
+background-color: var(--path);
+display: inline-block;
+overflow-x: hidden;
+width: 200px;
+height: 200px;
+margin: 10px;
+}
+
+#lileft {
+margin-top: 20px;
+margin-left: 45px;
+}
+
+#shrine {
+border: 22px solid transparent;
+border-image: url('pant.png') 18 stretch;
+background-color: var(--path);
+width: 100px;
+margin-left: 50px;
+color: var(--wall);
+}
+
+#up {
+z-index: 2;
+margin-top: auto;
+margin-bottom: -3px;
+border-width: 3px 3px 0px 3px;
+}
+
+.credits {
+font-size: 90%;
+position: absolute;
+top: -17px;
+left: 10px;
+width: 380px;
+border: 22px solid transparent;
+border-image: url('pant.png') 18 stretch;
+background-color: var(--path);
+z-index:2;
+}
+
+.longpath {
+border: 22px solid transparent;
+border-image: url('pant.png') 18 stretch;
+background-color: var(--path);
+width: 10px;
+height: 555px;
+margin: auto;
+}
+
+audio {
+  position: absolute;
+top: 30px;
+left: 60px;
+}
+
+footer {
+margin-top: 10px;
+}

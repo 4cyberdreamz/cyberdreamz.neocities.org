@@ -1,0 +1,195 @@
+:root {
+--ink: #F87A44;
+--offwhite: #D7DDD2;
+--enink: #994CDB;
+--offblack: #383838;
+}
+
+@font-face {
+font-family: 'splatoon1';
+src: url('/fonts/Splatoon1.otf') format('truetype');
+}
+
+@font-face {
+font-family: 'splatoon2';
+src: url('/fonts/Splatoon2.otf') format('truetype');
+}
+
+body {
+background-image: url('splatbg.png');
+background-size: cover;
+list-style-image: url('chum.png');
+overflow-x:hidden;
+image-rendering: pixelated;
+font-family: splatoon2;
+line-height: 1;
+}
+
+.deco {
+position: absolute;
+background-image: url('tape.png');
+width: 100%;
+left:0;
+height: 22px;
+z-index: -1;
+rotate: -10deg;
+}
+
+.deco1 {
+position: absolute;
+background-image: url('tape.png');
+width: 100%;
+left: 0;
+height: 22px;
+z-index: -1;
+rotate: 5deg;
+}
+
+.ink {
+color: var(--ink);
+}
+
+.container {
+border: 5px dashed var(--ink);
+padding: 10px;
+margin: auto;
+margin-top: 40px;
+background-color: var(--offwhite);
+height: auto;
+width: 700px;
+}
+
+p {
+color: var(--offblack);
+}
+
+.titl {
+display: inline-block;
+color: var(--offblack);
+vertical-align: top;
+padding-top: 30px;
+animation-name: glow;
+animation-duration:1s;
+animation-iteration-count: infinite;
+}
+
+.main {
+text-align: center;
+}
+
+.leftside, .center, .rightside {
+display: inline-block;
+}
+
+.leftside {
+width: 200px;
+}
+.center {
+vertical-align: top;
+padding-top: 80px;
+width:250px;
+}
+
+.rightside {
+width: 200px;
+}
+
+.botleft {
+padding-top: 10px;
+color: var(--offblack);
+font-family: splatoon1;
+background-image: url('squit2.gif');
+display: inline-block;
+width: 400px;
+}
+
+.swid {
+color: var(--offwhite);
+background-color: var(--offblack);
+padding: 10px;
+display: inline-block;
+rotate: 5deg;
+margin-bottom: 30px;
+}
+
+footer {
+margin: auto;
+margin-top: 20px;
+width: 700px;
+padding: 5px;
+text-align: center;
+color: var(--ink);
+background-color: var(--offblack);
+}
+
+.fire {
+background-image: url('Explosion1.gif');
+width: 100%;
+height: 100px;
+}
+
+.name {
+z-index: 1;
+font-family: splatoon1;
+font-size: 35px;
+position: absolute;
+left: 34%;
+top: 30px;
+rotate: 2deg;
+}
+
+.botright{
+vertical-align: top;
+display: inline-block;
+margin-top: 30px;
+margin-left: 8px;
+}
+
+audio {
+margin-top: 10px;
+margin-left: 40px;
+width: 200px;
+}
+
+.alien {
+width: 281px;
+}
+
+.deco5 {
+position: absolute;
+right: 350px;
+rotate: 10deg;
+bottom: -300px;
+}
+
+li {
+font-family: splatoon2;
+}
+
+a{
+color: var(--enink);
+}
+
+.sambg, .sambg2 {
+position: absolute;
+top: 50%;
+animation-name: glow;
+animation-duration:1s;
+animation-iteration-count: infinite;
+}
+
+.sambg2 {
+-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+right: 0px;
+}
+
+audio::-webkit-media-controls-panel {
+background-color: var(--ink);
+}
+
+@keyframes glow {
+0% {filter: drop-shadow(0px 0px 5px var(--ink));}
+50% {filter: drop-shadow(0px 0px 10px var(--ink));}
+100% {filter: drop-shadow(0px 0px 7px var(--ink));}
+}

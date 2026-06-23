@@ -1,0 +1,136 @@
+#title {
+padding: 10px;
+width: 640px;
+margin: 10px;
+}
+
+#back {
+position: absolute;
+z-index: 2;
+width: 100px;
+height: 13px;
+overflow:hidden;
+border-top: 5px dashed var(--softblue);
+border-left: 6px dashed var(--softblue);
+border-right: 6px dashed var(--softblue);
+left: 499px;
+top:71px;
+background-image: url('bgs/aquagalaxy_small.gif');
+}
+
+#disc {
+position: absolute;
+z-index: 2;
+left: 370px;
+top: 480px;
+}
+
+#stamp {
+width: 425px;
+height: 340px;
+}
+
+#blinkie {
+width: 180px;
+height: 600px;
+}
+
+#user {
+width: 360px;
+height: 205px;
+}
+
+#pix {
+width: 245px;
+height: 205px;
+}
+
+#button {
+width: 425px;
+height: 205px;
+}
+
+.line {
+border-top: 5px dashed var(--softblue);
+}
+
+.left, .right, .bottom {
+display: inline-block;
+padding: 13px;
+}
+
+.left {
+width: 430px;
+}
+
+.right {
+width: 180px;
+vertical-align: top;
+}
+
+.container {
+height: 1130px;
+}
+
+.kitties, .kitties2 {
+margin-top: 10px;
+height:20px; 
+width:700px;
+background-image: url('misc/cat.gif');
+animation: marquee 2s linear infinite;
+}
+
+.kitties2 {
+animation-direction: reverse;
+}
+
+#admin {
+z-index: 2;
+position: absolute;
+bottom: 0px;
+left: 630px;
+}
+
+#accident, #incomp {
+z-index: 2;
+position: absolute;
+}
+
+#accident {
+left: 400px;
+bottom: 335px;
+rotate: 4deg;
+}
+
+#incomp {
+rotate: -5deg;
+left: 220px;
+top: 80px;
+}
+
+#one {
+rotate: 1.5deg;
+}
+
+#two {
+rotate: -1.5deg;
+}
+
+#one:hover {
+rotate: 0deg;
+}
+#two:hover {
+rotate: 0deg;
+}
+
+@keyframes marquee {
+
+0% {
+background-position-x: 0px, 20px;
+}
+
+100% {
+background-position-x: 20px, 0px;
+}
+
+}

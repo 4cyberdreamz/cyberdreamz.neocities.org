@@ -6,14 +6,9 @@
 --lime: #CBFD90;
 }
 
-/* @font-face {
-  font-family: 'pixeloid';
-  src:url('file:///C:/Users/1/Desktop/веббед сайт/PixeloidMono-d94EV.ttf') format('truetype');
-} */
-
 @font-face {
 font-family: Nintendo-DS-BIOS;
-src: url(/fonts/Nintendo-DS-BIOS.ttf);
+src: url(fonts/Nintendo-DS-BIOS.ttf);
 }
 
 body {
@@ -85,7 +80,7 @@ height: 450px;
 }
 
 .sidebarbottom{
-background-image: url('/home/gradient.png');
+background-image: url('home/gradient.png');
 height: 162px;
 width: 198px;
 position: absolute;
@@ -124,7 +119,7 @@ animation-iteration-count: infinite;
 .music {
 padding-top: 10px;
 margin: 10px;
-background-image: url('/bgs/purplegalaxy.png');
+background-image: url('bgs/purplegalaxy.png');
 height: 240px;
 text-align: center;
 font-size: 80%;

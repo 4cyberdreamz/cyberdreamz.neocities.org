@@ -20,12 +20,12 @@
 
 @font-face {
 font-family: Acidic;
-src: url(/fonts/Acidic.TTF) format('truetype');
+src: url('fonts/Acidic.TTF') format('truetype');
 }
 
 @font-face {
 font-family: Marksman;
-src: url(/fonts/Marksman.otf) format('truetype');
+src: url('fonts/Marksman.otf') format('truetype');
 }
 
 audio {
@@ -39,7 +39,7 @@ audio {
 }
 
 body {
-    background-image: url('/2dart/img/bg.png');
+    background-image: url('2dart/img/bg.png');
 	background-size: cover;
 	background-position: center;
     color: var(--darkblue);

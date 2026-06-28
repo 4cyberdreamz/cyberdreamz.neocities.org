@@ -4,18 +4,13 @@
 --path: #E8FF3F;
 }
 
-/* @font-face {
-  font-family: 'pixeloid';
-  src:url('/fonts/PixeloidMono.ttf') format('truetype');
-} */
-
 @font-face {
 font-family: Nintendo-DS-BIOS;
-src: url(/fonts/Nintendo-DS-BIOS.ttf);
+src: url(fonts/Nintendo-DS-BIOS.ttf);
 }
 
 body {
-background-image: url('g.gif');
+background-image: url('off/g.gif');
 background-size: 40px 40px;
 image-rendering: pixelated;
 font-family: 'Nintendo-DS-BIOS';
@@ -197,7 +192,7 @@ margin-top: 40px;
 width: 500px;
 height: 45px;
 border: 22px solid transparent;
-border-image: url('pant.png') 18 stretch;
+border-image: url('off/pant.png') 18 stretch;
 background-color: var(--path);
 }
 
@@ -208,7 +203,7 @@ right: 65px;
 width: 250px;
 margin: 10px;
 border: 22px solid transparent;
-border-image: url('pant1.png') 18 stretch;
+border-image: url('off/pant1.png') 18 stretch;
 background-color: var(--path);
 }
 
@@ -216,7 +211,7 @@ background-color: var(--path);
 position: absolute;
 bottom: 0;
 margin: auto;
-background-image: url('g2.gif');
+background-image: url('off/g2.gif');
 background-size: 35px 35px;
 height: 10px;
 width: 100%;
@@ -225,7 +220,7 @@ width: 100%;
 #back {
 margin-top: 10px;
 border: 22px solid transparent;
-border-image: url('pant.png') 18 stretch;
+border-image: url('off/pant.png') 18 stretch;
 background-color: var(--path);
 }
 
@@ -240,7 +235,7 @@ position: relative;
 
 .list {
 border: 22px solid transparent;
-border-image: url('pant.png') 18 stretch;
+border-image: url('off/pant.png') 18 stretch;
 background-color: var(--path);
 display: inline-block;
 overflow-x: hidden;
@@ -256,7 +251,7 @@ margin-left: 45px;
 
 #shrine {
 border: 22px solid transparent;
-border-image: url('pant.png') 18 stretch;
+border-image: url('off/pant.png') 18 stretch;
 background-color: var(--path);
 width: 100px;
 margin-left: 50px;
@@ -277,14 +272,14 @@ top: -17px;
 left: 10px;
 width: 380px;
 border: 22px solid transparent;
-border-image: url('pant.png') 18 stretch;
+border-image: url('off/pant.png') 18 stretch;
 background-color: var(--path);
 z-index:2;
 }
 
 .longpath {
 border: 22px solid transparent;
-border-image: url('pant.png') 18 stretch;
+border-image: url('off/pant.png') 18 stretch;
 background-color: var(--path);
 width: 10px;
 height: 555px;

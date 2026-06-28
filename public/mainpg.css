@@ -65,12 +65,12 @@ border: 2px dashed var(--mint);
 
 #top {
 margin-bottom: 10px;
-background-image: url('banner1.gif');
+background-image: url('home/banner1.gif');
 }
 
 #bottom {
 margin-top: 10px;
-background-image: url('banner11.gif');
+background-image: url('home/banner11.gif');
 }
 
 #hello {
@@ -87,7 +87,7 @@ z-index: 2;
 }
 
 .sky {
-background-image: url('/bgs/cloudset1.png');
+background-image: url('bgs/cloudset1.png');
 width: 150px;
 height: 150px;
 border: 2px dashed var(--mint);

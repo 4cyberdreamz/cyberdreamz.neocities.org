@@ -18,7 +18,7 @@ position: relative;
 
 @font-face {
 font-family: Nintendo-DS-BIOS;
-src: url(https://dl.dropbox.com/s/vlxjtnvrl9s0snp/Nintendo-DS-BIOS.ttf);
+src: url('fonts/Nintendo-DS-BIOS.ttf');
 }
 
 .disk {
@@ -44,7 +44,7 @@ src: url(https://dl.dropbox.com/s/vlxjtnvrl9s0snp/Nintendo-DS-BIOS.ttf);
 .stim {
 	width: 1920px;
 	height:56px;
-	background-image: url('stim.gif');
+	background-image: url('mymusic/stim.gif');
 	background-repeat: no-repeat;
 	position: absolute;
 	top: 300px;
@@ -83,7 +83,7 @@ border-image: url('border.png') 5 stretch; */
 	height:537px;
 	width: 650px;
 	overflow: auto;
-	background-image: url('pattern 157.gif');
+	background-image: url('bgs/pattern 157.gif');
 	
 }
 
@@ -99,7 +99,7 @@ border-image: url('border.png') 5 stretch; */
 	width: 650px;
 	height:570px;
 	border-right: 1px solid black;
-	background-image: url('pattern 328.gif');
+	background-image: url('bgs/pattern 328.gif');
 }
 
 .song {

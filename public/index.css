@@ -168,3 +168,11 @@ border-top: 5px dashed var(--softblue);
 100%{color: var(--mint);
 }
 }
+
+#tab {
+  transition: all 1s;
+}
+
+#tab:hover {
+  transform:rotate(360deg);
+}

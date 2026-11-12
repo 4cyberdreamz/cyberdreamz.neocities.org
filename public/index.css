@@ -129,6 +129,12 @@ font-size: 80%;
 border: 0px solid black;
 }
 
+#rings {
+  margin-top: 165px;
+	height: 150;
+	text-align: center;
+}
+
 main {
 width: 700px;
 }
